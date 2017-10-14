@@ -107,9 +107,9 @@ public class Main {
         verifyHmodEntityExists("usr/share/games/CLV-S-00NES/CLV-S-00NES.desktop");
         verifyHmodEntityExists("usr/share/games/CLV-S-00NES/CLV-S-00NES.png");
         verifyHmodEntityExists("usr/share/games/CLV-S-00NES/CLV-S-00NES_small.png");
-        verifyHmodEntityExists("usr/share/games/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES.desktop");
-        verifyHmodEntityExists("usr/share/games/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES.png");
-        verifyHmodEntityExists("usr/share/games/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES_small.png");
+        verifyHmodEntityExists("/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES.desktop");
+        verifyHmodEntityExists("/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES.png");
+        verifyHmodEntityExists("/nes/kachikachi/CLV-P-0SNES/CLV-P-0SNES_small.png");
     }
 
     /**
@@ -211,7 +211,7 @@ public class Main {
         copyFileFromDumpToHmod("usr/lib/liblzo2.so.2.0.0", "lib/liblzo2.so.2.0.0");
 
         // copy /usr/share/games/nes/kachikachi
-        copyDirectoryFromDumpToHmod("usr/share/games/nes/kachikachi", "usr/share/games/nes/kachikachi");
+        copyDirectoryFromDumpToHmod("usr/share/games/nes/kachikachi", "nes/kachikachi");
     }
 
     /**
